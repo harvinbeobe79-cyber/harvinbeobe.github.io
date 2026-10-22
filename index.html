@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harvin | Cybersécurité & Réseautique</title>
+<meta name="description" content="Portfolio de Harvin, étudiant en Technologie des systèmes informatiques – Cybersécurité et réseautique au Collège La Cité (Ottawa).">
+<style>
+:root{--bg:#0b1220;--card:#121c31;--txt:#e6edf7;--mut:#93a4bf;--acc:#2dd4bf;--acc2:#60a5fa;--bd:#22304d}
+@media (prefers-color-scheme:light){:root{--bg:#f6f8fc;--card:#fff;--txt:#0f1b33;--mut:#5a6b88;--acc:#0d9488;--acc2:#2563eb;--bd:#dbe3f0}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+a{color:var(--acc2);text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav b{color:var(--acc);font-family:ui-monospace,Consolas,monospace}
+nav a{margin-left:18px;font-size:.92rem;color:var(--mut)}
+nav a:hover{color:var(--txt)}
+.hero{padding:88px 0 64px}
+.tag{font-family:ui-monospace,Consolas,monospace;color:var(--acc);font-size:.9rem}
+h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.15;margin:10px 0 16px}
+h1 span{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mut);max-width:640px;font-size:1.08rem}
+.btns{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:10px;font-weight:600;border:1px solid var(--bd);color:var(--txt)}
+.btn.p{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#04121a;border:0}
+section{padding:56px 0;border-top:1px solid var(--bd)}
+h2{font-size:1.6rem;margin-bottom:6px}
+.sub{color:var(--mut);margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:22px}
+.card h3{font-size:1.05rem;margin-bottom:8px}
+.card p,.card li{color:var(--mut);font-size:.95rem}
+.card ul{padding-left:18px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:.78rem;padding:3px 10px;border-radius:99px;border:1px solid var(--bd);color:var(--acc);font-family:ui-monospace,Consolas,monospace}
+.bar{height:8px;background:var(--bd);border-radius:9px;margin:6px 0 14px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2));border-radius:9px}
+.row{display:flex;justify-content:space-between;font-size:.9rem}
+footer{padding:36px 0;border-top:1px solid var(--bd);color:var(--mut);text-align:center;font-size:.9rem}
+@media(max-width:640px){nav a{margin-left:12px}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap"><b>&gt;_ harvin</b>
+<div><a href="#apropos">À propos</a><a href="#competences">Compétences</a><a href="#labs">Labs</a><a href="#ccna">CCNA</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="tag">// Étudiant en cybersécurité & réseautique · Ottawa</div>
+<h1>Je construis et je <span>sécurise</span> des réseaux.</h1>
+<p>Étudiant en Technologie des systèmes informatiques – Cybersécurité et réseautique au Collège La Cité, en route vers la certification CCNA. Ce site documente ce que j'apprends, mes laboratoires et mes projets.</p>
+<div class="btns"><a class="btn p" href="#labs">Voir mes labs</a><a class="btn" href="#contact">Me contacter</a></div>
+</div></header>
+
+<section id="apropos"><div class="wrap">
+<h2>À propos</h2><p class="sub">Un parcours atypique, une rigueur éprouvée.</p>
+<div class="grid">
+<div class="card"><h3>Formation</h3><p>Programme collégial de six étapes en Technologie des systèmes informatiques – Cybersécurité et réseautique, Collège La Cité (Ottawa). Travail en français et en environnements Windows en anglais.</p></div>
+<div class="card"><h3>Expérience en finance</h3><p>Ancien analyste de crédit et gestionnaire de comptes. J'apporte au domaine des TI le sens de l'analyse du risque, la rigueur documentaire et l'orientation résultats.</p></div>
+<div class="card"><h3>Partage de connaissances</h3><p>Je crée du contenu éducatif sur les réseaux (Packet Tracer, modèle OSI, VLAN) et j'anime « Les Architectes Réseau », un groupe d'apprentissage.</p></div>
+</div></div></section>
+
+<section id="competences"><div class="wrap">
+<h2>Ce que j'apprends</h2><p class="sub">Compétences développées en laboratoire pendant mon programme.</p>
+<div class="grid">
+<div class="card"><h3>🌐 Réseautique</h3><p>Conception et dépannage de réseaux multi-routeurs.</p>
+<div class="chips"><span class="chip">VLAN</span><span class="chip">VLSM</span><span class="chip">OSPF</span><span class="chip">HSRP</span><span class="chip">EtherChannel</span><span class="chip">Routes statiques/flottantes</span><span class="chip">NAT/PAT</span><span class="chip">ACL</span></div></div>
+<div class="card"><h3>🔐 Sécurité</h3><p>Durcissement de la couche 2 et des accès.</p>
+<div class="chips"><span class="chip">Port-security</span><span class="chip">DHCP snooping</span><span class="chip">BPDU Guard</span><span class="chip">PortFast</span><span class="chip">Trunk sécurisé</span><span class="chip">SSL/TLS</span><span class="chip">GPO</span></div></div>
+<div class="card"><h3>🖥️ Systèmes</h3><p>Administration de serveurs et d'annuaires.</p>
+<div class="chips"><span class="chip">Windows Server</span><span class="chip">Active Directory</span><span class="chip">DNS</span><span class="chip">IIS</span><span class="chip">Debian</span><span class="chip">FTP/SFTP</span><span class="chip">SMB</span></div></div>
+<div class="card"><h3>☁️ Virtualisation</h3><p>Reproduction de topologies de classe en environnement isolé.</p>
+<div class="chips"><span class="chip">VMware Workstation</span><span class="chip">vCloud Director</span><span class="chip">Packet Tracer</span></div></div>
+<div class="card"><h3>🗄️ Bases de données</h3><p>Requêtes et intégration applicative.</p>
+<div class="chips"><span class="chip">MySQL</span><span class="chip">JOIN / GROUP BY</span><span class="chip">Python + MySQL</span></div></div>
+</div></div></section>
+
+<section id="labs"><div class="wrap">
+<h2>Laboratoires & projets</h2><p class="sub">Des mises en pratique concrètes. Ajoute un lien GitHub ou une capture pour chaque lab.</p>
+<div class="grid">
+<div class="card"><h3>Sécurité des commutateurs</h3><p>Lab Packet Tracer (SW_1, SW_2, ROUTER_1) : trunk sécurisé, DHCP snooping, PortFast + BPDU Guard, port-security.</p><div class="chips"><span class="chip">Cisco</span><span class="chip">Layer 2</span></div></div>
+<div class="card"><h3>Redondance et routage</h3><p>Routes statiques et flottantes avec commutateur de couche 3, HSRP, dépannage de topologies multi-routeurs.</p><div class="chips"><span class="chip">HSRP</span><span class="chip">Routage</span></div></div>
+<div class="card"><h3>Domaine Active Directory</h3><p>Scénario complet TechCorp SARL (techcorp.local) : création du domaine, DNS, stratégies de groupe.</p><div class="chips"><span class="chip">Windows Server</span><span class="chip">AD DS</span></div></div>
+<div class="card"><h3>Serveur Windows sécurisé</h3><p>Configuration DNS, certificats SSL/TLS, liaisons HTTPS dans IIS et GPO via gpedit.msc.</p><div class="chips"><span class="chip">IIS</span><span class="chip">PKI</span></div></div>
+<div class="card"><h3>Partage de fichiers</h3><p>Déploiement FTP/SFTP et SMB dans un environnement vCloud Director.</p><div class="chips"><span class="chip">SFTP</span><span class="chip">SMB</span></div></div>
+<div class="card"><h3>Python + MySQL</h3><p>Application Python connectée à une base « college » : insertion, lecture et mise à jour de données.</p><div class="chips"><span class="chip">Python</span><span class="chip">MySQL</span></div></div>
+</div></div></section>
+
+<section id="ccna"><div class="wrap">
+<h2>Parcours CCNA</h2><p class="sub">Progression vers la certification Cisco. Ajuste les pourcentages à ton rythme réel.</p>
+<div class="card">
+<div class="row"><span>Fondamentaux réseau & IP</span><span>80 %</span></div><div class="bar"><i style="width:80%"></i></div>
+<div class="row"><span>Accès réseau (VLAN, EtherChannel)</span><span>75 %</span></div><div class="bar"><i style="width:75%"></i></div>
+<div class="row"><span>Connectivité IP (routage, HSRP)</span><span>65 %</span></div><div class="bar"><i style="width:65%"></i></div>
+<div class="row"><span>Services IP (NAT/PAT)</span><span>50 %</span></div><div class="bar"><i style="width:50%"></i></div>
+<div class="row"><span>Sécurité (ACL, sécurité L2)</span><span>60 %</span></div><div class="bar"><i style="width:60%"></i></div>
+<div class="row"><span>Automatisation & SDN</span><span>35 %</span></div><div class="bar"><i style="width:35%"></i></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Travaillons ensemble</h2><p class="sub">À la recherche d'un stage ou d'un poste en réseautique, en infrastructure TI ou en cybersécurité.</p>
+<div class="grid">
+<div class="card"><h3>Courriel</h3><p><a href="mailto:ton.courriel@exemple.com">ton.courriel@exemple.com</a></p></div>
+<div class="card"><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">linkedin.com/in/ton-profil</a></p></div>
+<div class="card"><h3>GitHub</h3><p><a href="https://github.com/ton-compte" target="_blank" rel="noopener">github.com/ton-compte</a></p></div>
+</div></div></section>
+
+<footer><div class="wrap">© <span id="y"></span> Harvin · Collège La Cité, Ottawa</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
